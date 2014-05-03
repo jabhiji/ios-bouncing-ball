@@ -10,6 +10,8 @@
 
 @implementation ViewController
 
+@synthesize blackView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,7 +31,7 @@
     UIImageView *ballView = [[UIImageView alloc]
                              initWithFrame:CGRectMake(x-R, y-R, 2*R, 2*R)];
     ballView.image = ball;
-    [self.view addSubview:ballView];
+    [self.blackView addSubview:ballView];
 }
 
 

@@ -17,5 +17,6 @@
     Model* model;
     UIImage* ball;
 }
+@property (weak, nonatomic) IBOutlet View *blackView;
 
 @end
