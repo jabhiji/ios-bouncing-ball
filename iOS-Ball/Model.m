@@ -12,17 +12,24 @@
 
 @synthesize x;
 @synthesize y;
+@synthesize R;
+
 
 // Override superclass implementation of init so that we can provide a properly
 // initialized game model
+
 - (id) init {
+
     self = [super init];
     
     if (self) {
         x = 100.0;
         y = 200.0;
+        R = 20.0;
     }
+    
     return self;
 }
+
 
 @end

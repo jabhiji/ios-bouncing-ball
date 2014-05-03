@@ -25,7 +25,9 @@
     model = [[Model alloc] init];
     float x = model.x;
     float y = model.y;
-    UIImageView *ballView = [[UIImageView alloc] initWithFrame:CGRectMake(x-20, y-20, 40, 40)];
+    float R = model.R;
+    UIImageView *ballView = [[UIImageView alloc]
+                             initWithFrame:CGRectMake(x-R, y-R, 2*R, 2*R)];
     ballView.image = ball;
     [self.view addSubview:ballView];
 }

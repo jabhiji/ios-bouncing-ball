@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-#define BALL_RADIUS 20.0
-
 @interface Model : NSObject {
-    float x;
-    float y;
+    
+    float x;  // ball center x-coordinate
+    float y;  // ball center y-coordinate
+    float R;  // ball radius
 }
+
 @property float x;
 @property float y;
+@property float R;
+
 @end
