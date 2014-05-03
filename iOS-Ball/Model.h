@@ -8,12 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Model : NSObject {
-    
-    float x;  // ball center x-coordinate
-    float y;  // ball center y-coordinate
-    float R;  // ball radius
-}
+@interface Model : NSObject
 
 @property float x;
 @property float y;

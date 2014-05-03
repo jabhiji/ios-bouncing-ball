@@ -10,6 +10,8 @@
 
 @implementation ViewController
 
+@synthesize model;
+@synthesize ball;
 @synthesize blackView;
 
 - (void)viewDidLoad

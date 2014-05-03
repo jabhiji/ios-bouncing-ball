@@ -13,10 +13,10 @@
 #import "Model.h"
 #import "View.h"
 
-@interface ViewController : UIViewController {
-    Model* model;
-    UIImage* ball;
-}
-@property (weak, nonatomic) IBOutlet View *blackView;
+@interface ViewController : UIViewController
+
+@property Model* model;
+@property UIImage* ball;
+@property (nonatomic, strong) IBOutlet View *blackView;
 
 @end
