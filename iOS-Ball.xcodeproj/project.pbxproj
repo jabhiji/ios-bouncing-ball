@@ -21,6 +21,7 @@
 		1E61AF2C1914AB12007F265A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E61AF0E1914AB11007F265A /* UIKit.framework */; };
 		1E61AF341914AB12007F265A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF321914AB12007F265A /* InfoPlist.strings */; };
 		1E61AF361914AB12007F265A /* iOS_BallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E61AF351914AB12007F265A /* iOS_BallTests.m */; };
+		1E61AF401914AB38007F265A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF3F1914AB38007F265A /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1E61AF311914AB12007F265A /* iOS-BallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-BallTests-Info.plist"; sourceTree = "<group>"; };
 		1E61AF331914AB12007F265A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E61AF351914AB12007F265A /* iOS_BallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_BallTests.m; sourceTree = "<group>"; };
+		1E61AF3F1914AB38007F265A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		1E61AF111914AB11007F265A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E61AF3F1914AB38007F265A /* background.png */,
 				1E61AF121914AB11007F265A /* iOS-Ball-Info.plist */,
 				1E61AF131914AB11007F265A /* InfoPlist.strings */,
 				1E61AF161914AB11007F265A /* main.m */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E61AF231914AB11007F265A /* Images.xcassets in Resources */,
+				1E61AF401914AB38007F265A /* background.png in Resources */,
 				1E61AF151914AB11007F265A /* InfoPlist.strings in Resources */,
 				1E61AF1E1914AB11007F265A /* Main.storyboard in Resources */,
 			);
