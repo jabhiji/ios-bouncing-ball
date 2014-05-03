@@ -25,7 +25,9 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
+    UIImage* ball   = [UIImage imageNamed:@"yellowBall.png"];
+    [ball drawInRect:CGRectMake(100, 100, 20, 20)];
 }
-*/
+ */
 
 @end

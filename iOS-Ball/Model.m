@@ -9,22 +9,19 @@
 #import "Model.h"
 
 @implementation Model
-@synthesize ballRect = _ballRect;
 
+@synthesize x;
+@synthesize y;
+
+// Override superclass implementation of init so that we can provide a properly
+// initialized game model
 - (id) init {
-    
     self = [super init];
+    
     if (self) {
-    
-        // the yellow ball
-        UIImage *ballImage = [UIImage imageNamed:@"yellowBall.png"];
-        CGSize ballSize = [ballImage size];
-        ballSize.width = 2*BALL_RADIUS;
-        ballSize.height = 2*BALL_RADIUS;
-        ballRect = CGRectMake(100, 100, ballSize.width, ballSize.height);
-
+        x = 100.0;
+        y = 200.0;
     }
-    
     return self;
 }
 

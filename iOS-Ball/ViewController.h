@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+// Controller talks with the Model and the View
+
+#import "Model.h"
+#import "View.h"
+
+@interface ViewController : UIViewController {
+    Model* model;
+    UIImage* ball;
+}
 
 @end

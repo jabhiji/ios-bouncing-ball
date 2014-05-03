@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "View.h"
 
 #define BALL_RADIUS 20.0
 
 @interface Model : NSObject {
-    CGRect ballRect;
+    float x;
+    float y;
 }
-
-@property (readonly) CGRect ballRect;
-
+@property float x;
+@property float y;
 @end

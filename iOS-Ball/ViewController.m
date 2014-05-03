@@ -8,17 +8,28 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self drawBall];
 }
+
+
+- (void) drawBall
+{
+    ball = [UIImage imageNamed:@"yellowBall.png"];
+    
+    model = [[Model alloc] init];
+    float x = model.x;
+    float y = model.y;
+    UIImageView *ballView = [[UIImageView alloc] initWithFrame:CGRectMake(x-20, y-20, 40, 40)];
+    ballView.image = ball;
+    [self.view addSubview:ballView];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
