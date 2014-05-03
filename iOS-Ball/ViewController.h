@@ -18,5 +18,7 @@
 @property Model* model;
 @property UIImage* ball;
 @property (nonatomic, strong) IBOutlet View *blackView;
+@property UIImageView* ballView;
+- (IBAction)moveToRandomLocation:(id)sender;
 
 @end
