@@ -16,6 +16,7 @@
 @synthesize ballView;
 @synthesize timer;
 
+// ball is drawn at a random location on screen (based on the model)
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,21 +24,8 @@
     ball = [UIImage imageNamed:@"yellowBall.png"];
     model = [[Model alloc] init];
 
-    [self drawBall];
+    [self showBall];
 }
-
-
-- (void) drawBall
-{
-    float x = model.x;
-    float y = model.y;
-    float R = model.R;
-    ballView = [[UIImageView alloc]
-                initWithFrame:CGRectMake(x-R, y-R, 2*R, 2*R)];
-    ballView.image = ball;
-    [self.blackView addSubview:ballView];
-}
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -45,9 +33,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+// pressing the START button begins the animation
 - (IBAction)moveToRandomLocation:(id)sender {
 
+    // remove previously active instances (if any)
+    [timer invalidate];
     timer = nil;
+    
+    // create a new timer based loop
     timer = [NSTimer timerWithTimeInterval:1.0/60.0
                                     target:self
                                   selector:@selector(update)
@@ -55,18 +48,17 @@
                                    repeats:YES];
 
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
-    
 }
 
+// pressing the STOP button stops the animation
 - (IBAction)stopTimer:(id)sender {
     [timer invalidate];
     timer = nil;
 }
 
+// update model parameters and plot the ball using the view
 - (void) update
 {
-    if (timer != nil) {
-        
     // remove earlier image from the view
     [ballView removeFromSuperview];
     
@@ -84,10 +76,9 @@
     
     // draw the ball at the new location in the view
     [self showBall];
-        
-    }
 }
-                      
+
+// draw the ball in the defined view
 - (void) showBall
 {
     float x = model.x;
