@@ -18,8 +18,7 @@
 @synthesize WIDTH;
 @synthesize HEIGHT;
 
-// Override superclass implementation of init so that we can provide a properly
-// initialized game model
+// Override superclass implementation of init
 
 - (id) init {
 
@@ -41,8 +40,8 @@
     return self;
 }
 
-// moves the ball based on the current speed
-// and also checks for wall collisions
+// move the ball based on the current speed
+// and also check for wall collisions
 
 - (void) updateBallPosition
 {
