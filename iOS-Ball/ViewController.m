@@ -59,22 +59,13 @@
 // update model parameters and plot the ball using the view
 - (void) update
 {
-    // remove earlier image from the view
+    // remove earlier image
     [ballView removeFromSuperview];
+ 
+    // update ball position
+    [model updateBallPosition];
     
-    // change ball coordinates in the model
-    model.x += model.speedX;
-    model.y += model.speedY;
-    
-    // check for collisions with walls
-    if (model.x > model.WIDTH-model.R || model.x < model.R) {
-        model.speedX = -model.speedX;
-    }
-    if (model.y > model.HEIGHT-model.R || model.y < model.R) {
-        model.speedY = -model.speedY;
-    }
-    
-    // draw the ball at the new location in the view
+    // draw the ball at the new location
     [self showBall];
 }
 

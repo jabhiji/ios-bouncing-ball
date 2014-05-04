@@ -41,5 +41,22 @@
     return self;
 }
 
+// moves the ball based on the current speed
+// and also checks for wall collisions
+
+- (void) updateBallPosition
+{
+    // change ball coordinates in the model
+    x += speedX;
+    y += speedY;
+    
+    // check for collisions with walls
+    if (x > WIDTH-R || x < R) {
+        speedX = -speedX;
+    }
+    if (y > HEIGHT-R || y < R) {
+        speedY = -speedY;
+    }
+}
 
 @end

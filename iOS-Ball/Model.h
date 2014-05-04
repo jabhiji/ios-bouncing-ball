@@ -20,4 +20,6 @@
 @property float WIDTH;
 @property float HEIGHT;
 
+- (void) updateBallPosition;
+
 @end
