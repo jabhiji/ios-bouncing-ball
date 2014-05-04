@@ -14,4 +14,7 @@
 @property float y;
 @property float R;
 
+@property float speedX;
+@property float speedY;
+
 @end

@@ -19,6 +19,8 @@
 @property UIImage* ball;
 @property (nonatomic, strong) IBOutlet View *blackView;
 @property UIImageView* ballView;
+@property NSTimer* timer;
 - (IBAction)moveToRandomLocation:(id)sender;
-
+- (IBAction)stopTimer:(id)sender;
+- (void) update;
 @end

@@ -33,14 +33,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSm-9h-C0d">
-                                <rect key="frame" x="108" y="391" width="104" height="30"/>
+                                <rect key="frame" x="35" y="386" width="104" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Move Ball">
+                                <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="moveToRandomLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g8S-u5-nL3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuZ-6j-LGO">
+                                <rect key="frame" x="176" y="386" width="104" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToRandomLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QNi-9Q-5E3"/>
+                                    <action selector="stopTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vyv-Yc-G2q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,6 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="239" y="95"/>
         </scene>
     </scenes>
     <resources>

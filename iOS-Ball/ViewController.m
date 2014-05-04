@@ -14,6 +14,7 @@
 @synthesize ball;
 @synthesize blackView;
 @synthesize ballView;
+@synthesize timer;
 
 - (void)viewDidLoad
 {
@@ -46,18 +47,55 @@
 
 - (IBAction)moveToRandomLocation:(id)sender {
 
-    // remove earlier image
+    timer = nil;
+    timer = [NSTimer timerWithTimeInterval:1.0/60.0
+                                    target:self
+                                  selector:@selector(update)
+                                  userInfo:nil
+                                   repeats:YES];
+
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+}
+
+- (IBAction)stopTimer:(id)sender {
+    [timer invalidate];
+    timer = nil;
+}
+
+- (void) update
+{
+    if (timer != nil) {
+        
+    // remove earlier image from the view
     [ballView removeFromSuperview];
     
-    // draw the new image
-    model.x = model.R + arc4random()%(int)(280-2*model.R);
-    model.y = model.R + arc4random()%(int)(280-2*model.R);
+    // change ball coordinates in the model
+    model.x += model.speedX;
+    model.y += model.speedY;
+    
+    // check for collisions with walls
+    if (model.x > 280-model.R || model.x < model.R) {
+        model.speedX = -model.speedX;
+    }
+    if (model.y > 280-model.R || model.y < model.R) {
+        model.speedY = -model.speedY;
+    }
+    
+    // draw the ball at the new location in the view
+    [self showBall];
+        
+    }
+}
+                      
+- (void) showBall
+{
     float x = model.x;
     float y = model.y;
     float R = model.R;
     
     ballView = [[UIImageView alloc]
-                             initWithFrame:CGRectMake(x-R, y-R, 2*R, 2*R)];
+                initWithFrame:CGRectMake(x-R, y-R, 2*R, 2*R)];
     ballView.image = ball;
     [self.blackView addSubview:ballView];
 }

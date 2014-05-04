@@ -13,7 +13,8 @@
 @synthesize x;
 @synthesize y;
 @synthesize R;
-
+@synthesize speedX;
+@synthesize speedY;
 
 // Override superclass implementation of init so that we can provide a properly
 // initialized game model
@@ -23,9 +24,12 @@
     self = [super init];
     
     if (self) {
-        x = 140.0;
-        y = 140.0;
         R = 20.0;
+        x = R + arc4random()%(int)(280 - 2*R);
+        y = R + arc4random()%(int)(280 - 2*R);
+        
+        speedX = 1.0;
+        speedY = 1.0;
     }
     
     return self;
