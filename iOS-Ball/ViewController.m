@@ -67,10 +67,10 @@
     model.y += model.speedY;
     
     // check for collisions with walls
-    if (model.x > 280-model.R || model.x < model.R) {
+    if (model.x > model.WIDTH-model.R || model.x < model.R) {
         model.speedX = -model.speedX;
     }
-    if (model.y > 280-model.R || model.y < model.R) {
+    if (model.y > model.HEIGHT-model.R || model.y < model.R) {
         model.speedY = -model.speedY;
     }
     

@@ -17,4 +17,7 @@
 @property float speedX;
 @property float speedY;
 
+@property float WIDTH;
+@property float HEIGHT;
+
 @end

@@ -15,6 +15,8 @@
 @synthesize R;
 @synthesize speedX;
 @synthesize speedY;
+@synthesize WIDTH;
+@synthesize HEIGHT;
 
 // Override superclass implementation of init so that we can provide a properly
 // initialized game model
@@ -24,6 +26,10 @@
     self = [super init];
     
     if (self) {
+        
+        WIDTH = 280.0;
+        HEIGHT = 340.0;
+        
         R = 20.0;
         x = R + arc4random()%(int)(280 - 2*R);
         y = R + arc4random()%(int)(280 - 2*R);
