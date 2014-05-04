@@ -34,8 +34,8 @@
 }
 
 // pressing the START button begins the animation
-- (IBAction)moveToRandomLocation:(id)sender {
-
+- (IBAction)startTimer:(id)sender {
+    
     // remove previously active instances (if any)
     [timer invalidate];
     timer = nil;
@@ -46,7 +46,7 @@
                                   selector:@selector(update)
                                   userInfo:nil
                                    repeats:YES];
-
+    
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 }
 

@@ -40,7 +40,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="moveToRandomLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g8S-u5-nL3"/>
+                                    <action selector="startTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CiK-6t-Hfq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuZ-6j-LGO">
@@ -51,7 +51,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="moveToRandomLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QNi-9Q-5E3"/>
                                     <action selector="stopTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vyv-Yc-G2q"/>
                                 </connections>
                             </button>
