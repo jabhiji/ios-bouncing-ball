@@ -1,0 +1,6 @@
+ios-bouncing-ball
+=================
+
+A simple iOS animation using NSTimer and the Model-View-Contoller paradigm
+
+This code simulates a yellow ball bouncing around inside a 2D square box. The user can start and stop the animation using the buttons below the square box.
