@@ -29,14 +29,14 @@
         WIDTH = 280.0;
         HEIGHT = 340.0;
         
-        R = 20.0;
+        R = 15.0;
         x1 = R + arc4random()%(int)(WIDTH/2 - 2*R);
         y1 = R + arc4random()%(int)(HEIGHT/2 - 2*R);
         x2 = WIDTH/2 + R + arc4random()%(int)(WIDTH/2 - 2*R);
         y2 = HEIGHT/2 + R + arc4random()%(int)(HEIGHT/2 - 2*R);
         
-        speedX1 = 1.0;
-        speedY1 = 1.0;
+        speedX1 = 0.2;
+        speedY1 = 0.2;
         speedX2 = 2.0;
         speedY2 = 2.0;
     }
@@ -89,7 +89,17 @@
         y2 = R + 1;
         speedY2 = fabsf(speedY2);
     }
-
+    
+    // check collisions with each other
+    float distance = sqrtf((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+    if (distance < 2*R) {
+        float temp = speedX1;
+        speedX1 = speedX2;
+        speedX2 = temp;
+        temp = speedY1;
+        speedY1 = speedY2;
+        speedY2 = temp;
+    }
 }
 
 @end
