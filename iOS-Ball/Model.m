@@ -50,11 +50,21 @@
     y += speedY;
     
     // check for collisions with walls
-    if (x > WIDTH-R || x < R) {
-        speedX = -speedX;
+    if (x > WIDTH - R) {
+        x = WIDTH - R - 1;
+        speedX = -fabsf(speedX);
     }
-    if (y > HEIGHT-R || y < R) {
-        speedY = -speedY;
+    if (y > HEIGHT - R) {
+        y = HEIGHT - R - 1;
+        speedY = -fabsf(speedY);
+    }
+    if (x < R) {
+        x = R + 1;
+        speedX = fabsf(speedX);
+    }
+    if (y < R) {
+        y = R + 1;
+        speedY = fabsf(speedY);
     }
 }
 

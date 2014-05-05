@@ -15,11 +15,11 @@
 
 @interface ViewController : UIViewController
 
-@property Model* model;
-@property UIImage* ball;
+@property (nonatomic, strong) Model* model;
+@property (nonatomic, strong) UIImage* ball;
 @property (nonatomic, strong) IBOutlet View *blackView;
-@property UIImageView* ballView;
-@property NSTimer* timer;
+@property (nonatomic, strong) UIImageView* ballView;
+@property (nonatomic, strong) NSTimer* timer;
 
 - (IBAction)startTimer:(id)sender;
 - (IBAction)stopTimer:(id)sender;
