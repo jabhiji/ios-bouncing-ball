@@ -26,15 +26,7 @@
     
     if (self) {
         
-        WIDTH = 280.0;
-        HEIGHT = 340.0;
-        
         R = 15.0;
-        x1 = R + arc4random()%(int)(WIDTH/2 - 2*R);
-        y1 = R + arc4random()%(int)(HEIGHT/2 - 2*R);
-        x2 = WIDTH/2 + R + arc4random()%(int)(WIDTH/2 - 2*R);
-        y2 = HEIGHT/2 + R + arc4random()%(int)(HEIGHT/2 - 2*R);
-        
         speedX1 = 0.2;
         speedY1 = 0.2;
         speedX2 = 2.0;
@@ -42,6 +34,15 @@
     }
     
     return self;
+}
+
+// set the initial location of the two balls
+- (void) setInitialBallPositions
+{
+    x1 = R + arc4random()%(int)(WIDTH/2 - 2*R);
+    y1 = R + arc4random()%(int)(HEIGHT/2 - 2*R);
+    x2 = WIDTH/2 + R + arc4random()%(int)(WIDTH/2 - 2*R);
+    y2 = HEIGHT/2 + R + arc4random()%(int)(HEIGHT/2 - 2*R);
 }
 
 // move the ball based on the current speed

@@ -25,8 +25,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
     ball1 = [UIImage imageNamed:@"yellowBall.png"];
     ball2 = [UIImage imageNamed:@"whiteBall.png"];
-    model = [[Model alloc] init];
 
+    // instantiate model variables
+    model = [[Model alloc] init];
+    model.WIDTH  = self.blackView.frame.size.width;
+    model.HEIGHT = self.blackView.frame.size.height;
+    [model setInitialBallPositions];
+
+    // display initial condition before animation starts
     [self showBalls];
 }
 

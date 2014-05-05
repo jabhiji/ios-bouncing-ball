@@ -24,6 +24,7 @@
 @property float WIDTH;
 @property float HEIGHT;
 
+- (void) setInitialBallPositions;
 - (void) updateBallPositions;
 
 @end
