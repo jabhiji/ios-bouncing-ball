@@ -16,9 +16,11 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) Model* model;
-@property (nonatomic, strong) UIImage* ball;
+@property (nonatomic, strong) UIImage* ball1;
+@property (nonatomic, strong) UIImage* ball2;
 @property (nonatomic, strong) IBOutlet View *blackView;
-@property (nonatomic, strong) UIImageView* ballView;
+@property (nonatomic, strong) UIImageView* ballView1;
+@property (nonatomic, strong) UIImageView* ballView2;
 @property (nonatomic, strong) NSTimer* timer;
 
 - (IBAction)startTimer:(id)sender;

@@ -10,16 +10,20 @@
 
 @interface Model : NSObject
 
-@property float x;
-@property float y;
+@property float x1;
+@property float x2;
+@property float y1;
+@property float y2;
 @property float R;
 
-@property float speedX;
-@property float speedY;
+@property float speedX1;
+@property float speedY1;
+@property float speedX2;
+@property float speedY2;
 
 @property float WIDTH;
 @property float HEIGHT;
 
-- (void) updateBallPosition;
+- (void) updateBallPositions;
 
 @end

@@ -26,6 +26,7 @@
 		1E61AF461914AC9C007F265A /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E61AF451914AC9C007F265A /* View.m */; };
 		1E61AF481914AE2F007F265A /* yellowBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF471914AE2F007F265A /* yellowBall.png */; };
 		1E61AF4E1916516F007F265A /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF4D1916516F007F265A /* space.png */; };
+		1E61AF5019175E09007F265A /* whiteBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF4F19175E09007F265A /* whiteBall.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		1E61AF451914AC9C007F265A /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
 		1E61AF471914AE2F007F265A /* yellowBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowBall.png; sourceTree = "<group>"; };
 		1E61AF4D1916516F007F265A /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space.png; sourceTree = "<group>"; };
+		1E61AF4F19175E09007F265A /* whiteBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		1E61AF111914AB11007F265A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E61AF4F19175E09007F265A /* whiteBall.png */,
 				1E61AF4D1916516F007F265A /* space.png */,
 				1E61AF471914AE2F007F265A /* yellowBall.png */,
 				1E61AF3F1914AB38007F265A /* background.png */,
@@ -253,6 +256,7 @@
 				1E61AF151914AB11007F265A /* InfoPlist.strings in Resources */,
 				1E61AF4E1916516F007F265A /* space.png in Resources */,
 				1E61AF1E1914AB11007F265A /* Main.storyboard in Resources */,
+				1E61AF5019175E09007F265A /* whiteBall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
