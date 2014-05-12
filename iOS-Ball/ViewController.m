@@ -13,8 +13,6 @@
 @synthesize model;
 @synthesize yellowBall, whiteBall;
 @synthesize blackView;
-//@synthesize ballView1;
-@synthesize ballView2;
 @synthesize timer;
 
 // ball is drawn at a random location on screen (based on the model)
