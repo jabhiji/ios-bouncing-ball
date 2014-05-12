@@ -11,10 +11,9 @@
 @implementation ViewController
 
 @synthesize model;
-@synthesize ball1;
-@synthesize ball2;
+@synthesize yellowBall, whiteBall;
 @synthesize blackView;
-@synthesize ballView1;
+//@synthesize ballView1;
 @synthesize ballView2;
 @synthesize timer;
 
@@ -23,8 +22,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    ball1 = [UIImage imageNamed:@"yellowBall.png"];
-    ball2 = [UIImage imageNamed:@"whiteBall.png"];
+
+    // initialize ball UIViews
+    CGRect viewRect = CGRectMake(100, 100, 40, 40);
+    
+    yellowBall = [[Ball1 alloc] initWithFrame:viewRect];
+    [yellowBall setBackgroundColor:[UIColor clearColor]];
+    
+    whiteBall = [[Ball2 alloc] initWithFrame:viewRect];
+    [whiteBall setBackgroundColor:[UIColor clearColor]];
 
     // instantiate model variables
     model = [[Model alloc] init];
@@ -68,14 +74,10 @@
 // update model parameters and plot the ball using the view
 - (void) update
 {
-    // remove earlier image
-    [ballView1 removeFromSuperview];
-    [ballView2 removeFromSuperview];
- 
     // update ball position
     [model updateBallPositions];
     
-    // draw the ball at the new location
+    // draw the balls at the new location
     [self showBalls];
 }
 
@@ -88,16 +90,11 @@
     float y2 = model.y2;
     float R = model.R;
     
-    ballView1 = [[UIImageView alloc]
-                initWithFrame:CGRectMake(x1-R, y1-R, 2*R, 2*R)];
-    ballView1.image = ball1;
-    [self.blackView addSubview:ballView1];
+    yellowBall.frame = CGRectMake(x1-R, y1-R, 2*R, 2*R);
+    [self.blackView addSubview:yellowBall];
 
-    ballView2 = [[UIImageView alloc]
-                initWithFrame:CGRectMake(x2-R, y2-R, 2*R, 2*R)];
-    ballView2.image = ball2;
-    [self.blackView addSubview:ballView2];
-
+    whiteBall.frame = CGRectMake(x2-R, y2-R, 2*R, 2*R);
+    [self.blackView addSubview:whiteBall];
 }
 
 @end

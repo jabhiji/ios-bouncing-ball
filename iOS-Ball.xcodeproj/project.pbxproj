@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2E71B619208B37009D232C /* Ball1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E71B519208B37009D232C /* Ball1.m */; };
+		1E2E71B91920924A009D232C /* Ball2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E71B81920924A009D232C /* Ball2.m */; };
 		1E61AF0B1914AB11007F265A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E61AF0A1914AB11007F265A /* Foundation.framework */; };
 		1E61AF0D1914AB11007F265A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E61AF0C1914AB11007F265A /* CoreGraphics.framework */; };
 		1E61AF0F1914AB11007F265A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E61AF0E1914AB11007F265A /* UIKit.framework */; };
@@ -24,8 +26,6 @@
 		1E61AF401914AB38007F265A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF3F1914AB38007F265A /* background.png */; };
 		1E61AF431914AC13007F265A /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E61AF421914AC13007F265A /* Model.m */; };
 		1E61AF461914AC9C007F265A /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E61AF451914AC9C007F265A /* View.m */; };
-		1E61AF481914AE2F007F265A /* yellowBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF471914AE2F007F265A /* yellowBall.png */; };
-		1E61AF5019175E09007F265A /* whiteBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF4F19175E09007F265A /* whiteBall.png */; };
 		1E61AF5419176B54007F265A /* nasa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E61AF5319176B54007F265A /* nasa.png */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E2E71B419208B37009D232C /* Ball1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball1.h; sourceTree = "<group>"; };
+		1E2E71B519208B37009D232C /* Ball1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball1.m; sourceTree = "<group>"; };
+		1E2E71B71920924A009D232C /* Ball2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball2.h; sourceTree = "<group>"; };
+		1E2E71B81920924A009D232C /* Ball2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball2.m; sourceTree = "<group>"; };
 		1E61AF071914AB11007F265A /* iOS-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E61AF0A1914AB11007F265A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E61AF0C1914AB11007F265A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +68,6 @@
 		1E61AF421914AC13007F265A /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		1E61AF441914AC9C007F265A /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		1E61AF451914AC9C007F265A /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
-		1E61AF471914AE2F007F265A /* yellowBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowBall.png; sourceTree = "<group>"; };
-		1E61AF4F19175E09007F265A /* whiteBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBall.png; sourceTree = "<group>"; };
 		1E61AF5319176B54007F265A /* nasa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nasa.png; path = ../nasa.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,10 @@
 				1E61AF421914AC13007F265A /* Model.m */,
 				1E61AF441914AC9C007F265A /* View.h */,
 				1E61AF451914AC9C007F265A /* View.m */,
+				1E2E71B419208B37009D232C /* Ball1.h */,
+				1E2E71B519208B37009D232C /* Ball1.m */,
+				1E2E71B71920924A009D232C /* Ball2.h */,
+				1E2E71B81920924A009D232C /* Ball2.m */,
 				1E61AF1F1914AB11007F265A /* ViewController.h */,
 				1E61AF201914AB11007F265A /* ViewController.m */,
 				1E61AF221914AB11007F265A /* Images.xcassets */,
@@ -144,9 +150,7 @@
 		1E61AF111914AB11007F265A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E61AF4F19175E09007F265A /* whiteBall.png */,
 				1E61AF5319176B54007F265A /* nasa.png */,
-				1E61AF471914AE2F007F265A /* yellowBall.png */,
 				1E61AF3F1914AB38007F265A /* background.png */,
 				1E61AF121914AB11007F265A /* iOS-Ball-Info.plist */,
 				1E61AF131914AB11007F265A /* InfoPlist.strings */,
@@ -250,13 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E61AF481914AE2F007F265A /* yellowBall.png in Resources */,
 				1E61AF231914AB11007F265A /* Images.xcassets in Resources */,
 				1E61AF401914AB38007F265A /* background.png in Resources */,
 				1E61AF151914AB11007F265A /* InfoPlist.strings in Resources */,
 				1E61AF1E1914AB11007F265A /* Main.storyboard in Resources */,
 				1E61AF5419176B54007F265A /* nasa.png in Resources */,
-				1E61AF5019175E09007F265A /* whiteBall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2E71B619208B37009D232C /* Ball1.m in Sources */,
 				1E61AF461914AC9C007F265A /* View.m in Sources */,
+				1E2E71B91920924A009D232C /* Ball2.m in Sources */,
 				1E61AF211914AB11007F265A /* ViewController.m in Sources */,
 				1E61AF1B1914AB11007F265A /* AppDelegate.m in Sources */,
 				1E61AF171914AB11007F265A /* main.m in Sources */,
